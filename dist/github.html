@@ -7,13 +7,13 @@
 <body>
     <nav>
     <ul>
-        <li><a href="#area1">O que é, para que serve e como funciona</a></li>
+        <li><a href="#area1">O que é, para que serve e como funciona - Git</a></li>
         <li><a href="#area2">Instalando o Git</a></li>
-        <li><a href="#area3">Branch,README e Commit - Git</a></li>
-        <li><a href="#area4">Revertento Modificações - Git</a></li>
-        <li><a href="#area5"></a></li>
-        <li><a href="#area6"></a></li>
-        <li><a href="#area7"></a></li>
+        <li><a href="#area3">Configurando o Git</a></li>
+        <li><a href="#area4">Iniciando um repositório - Git</a></li>
+        <li><a href="#area5">Branch,README e Commit - Git</a></li>
+        <li><a href="#area6">Revertento Modificações - Git</a></li>
+        <li><a href="#area7">Trabalhando com diferentes Branches - Git</a></li>
         <li><a href="#area8"></a></li>
         <li><a href="#area9"></a></li>
         <li><a href="#area10"></a></li>
@@ -22,7 +22,7 @@
     </nav>
 
     <section>
-        <h1 id="area1"><em>O que é, para que serve e como funciona - GIT/GITHUB</em></h1>
+        <h1 id="area1"><em>O que é, para que serve e como funciona - Git</em></h1>
         <h3>É um sistema de <em>versionamento</em>, ou seja em caso de <em>bugs</em> você consegue voltar para versão anterior sem o bug, também consegue trabalhar em <em>equipe</em> com várias pessoas editando o mesmo <em>arquivo</em></h3>
         <div class="logo">
         <img src="../assets/images/Git-Logo.png">
@@ -39,7 +39,7 @@
         <img src="../assets/images/instalandogit.png">
        </ol>
 
-       <h1><em>Configurando o Git</em></h1>
+       <h1 id="area3"><em>Configurando o Git</em></h1>
        <h3>Sempre que houver uma alteração no projeto o <em>Git</em> automáticamente vai associar ao <em>usuário responsável</em> pela alteração</h3>
         <ol type="I">
             <li>Em <em>pront de comando</em> coloque as seguintes informações para configurar com seu dados</li>
@@ -49,7 +49,7 @@
         </ol>
 
         
-        <h1><em>Iniciando um repositório - Git</em></h1>
+        <h1 id="area4"><em>Iniciando um repositório - Git</em></h1>
         <h3>Comandos básicos de <em>pront de comando</em></h3>
 
         <ol type="I">
@@ -72,7 +72,7 @@
           <img src="../assets/images/configit5.png">
         </ol>
 
-        <h1 id="area3"><em>Branch,README e Commit - Git</em></h1>
+        <h1 id="area5"><em>Branch,README e Commit - Git</em></h1>
         <h3><em>Branch</em> são versões diferentes do seu sistema. O <em>Branch</em> principal do sitema se chama <em>Master</em></h3>
         <h3><em>Commit</em> é quando faz alterações no sitema e envia para o <em>Git</em> e o guite salva apenas as alterações. o <em>Commit</em> geralmente é acompanhado de um comentário que esplica o que você fez</h3>
         <h3><em>README</em> é o arquivo que todo programador que entra no projeto vai ler. Ele é o arquivo principal do projeto</h3>
@@ -97,12 +97,23 @@
             <img src="../assets/images/brc8.png">
         </ol>
 
-        <h1 id="area4"><em>Revertento Modificações - Git</em></h1>
+        <h1 id="area6"><em>Revertento Modificações - Git</em></h1>
         <h3>Se tiver feito algo de errado e queira voltar para versão anterior</h3>
         <ol type="I">
             <li>Para saber em qual <em>Branch</em> está digite <em>git log</em> e depois <em>git branch</em></li>
             <img src="../assets/images/revert1.png">
-            
+            <li>Crie um novo commit, se ele estiver errado e desejar voltar para a versão anterior</li>
+            <li>Existem três formas de <em>git reset</em>.O primeiro passo de tudo é definir o tipo de git reset</li>
+            <li>git reset <em>--soft</em> ele volta antes de dar o commit</li>
+            <li>git reset <em>--mixed</em> ele volta na fase de adicionar</li>
+            <li>git reset <em>--hard</em> ele volta para o commit anterior</li>
+            <li>Depois de escolher o tipo de reset coloque o código do commit que deseja voltar</li>
+            <img src="../assets/images/revert2.png">
+            <li>Digite <em>git log</em> para conferir se resetou</li>
+            <img src="../assets/images/revert3.png">
         </ol>
+
+        <h1 id="area7"><em>Trabalhando com diferentes Branches - Git</em></h1>
+        <h3></h3>
    
     </section>
