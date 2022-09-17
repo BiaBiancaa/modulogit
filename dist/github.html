@@ -14,7 +14,7 @@
         <li><a href="#area5">Branch,README e Commit - Git</a></li>
         <li><a href="#area6">Revertento Modificações - Git</a></li>
         <li><a href="#area7">Trabalhando com diferentes Branches - Git</a></li>
-        <li><a href="#area8"></a></li>
+        <li><a href="#area8">Diferença entre arquivos</a></li>
         <li><a href="#area9"></a></li>
         <li><a href="#area10"></a></li>
         <li><a href="#area11"></a></li>
@@ -116,9 +116,27 @@
         <h1 id="area7"><em>Trabalhando com diferentes Branches - Git</em></h1>
         <h3>Como criar <em>Novos Branches</em></h3>
         <ol type="I">
-            <li>Para criar um novo Branche digite <em>git branch "nome do novo branche"</em></li>
-            <li>Depois para mudar para este novo branche digite <em>git checkout "nome do novo branche"</em></li>
+            <li>Para criar um novo Branch digite <em>git branch "nome do novo branch"</em></li>
+            <li>Depois para mudar para este novo branch digite <em>git checkout "nome do novo branch"</em></li>
             <img src="../assets/images/novob1.png">
+        </ol>
+        <h3><em>Obs:.</em> o <em>novo branch</em> salva as informações do <em>branch master</em> mas o <em>branch master</em> não salva as informações do <em>novo branch</em></h3>
+        <ol type="I">
+            <li><em>Novo Branch</em></li>
+            <img src="../assets/images/novob2.png">
+            <li><em>Branch Master</em></li>
+            <img src="../assets/images/novob3.png">
+        </ol>
+
+        <h1 id="area8"><em>Diferença entre arquivos</em></h1>
+        <h3>Como diferenciar o que está no <em>Commit</em> do que está no <em>HTML</em></h3>
+        <ol type="I">
+            <li>Use o <em>git diff</em> para saber detalhadamente onde foram feitas as alterações antes der dar o novo commit</li>
+            <img src="../assets/images/diff1.png">
+            <li>Para saber apenas o nome dos arquivos que foram <em>modificados</em> digite <em>git diff --name-only</em></li>
+            <img src="../assets/images/diff2.png">
+            <li>Para saber das alterações feitas em determinado arquivo digite <em>git diff "nome do arquivo"</em></li>
+            <li>Para voltar a alterações feitas em determinado arquivo digite <em>git checkout HEAD -- "arquivo que queira voltar"</em></li>
         </ol>
    
     </section>
