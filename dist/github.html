@@ -15,8 +15,8 @@
         <li><a href="#area6">Revertento Modificações - Git</a></li>
         <li><a href="#area7">Trabalhando com diferentes Branches - Git</a></li>
         <li><a href="#area8">Diferença entre arquivos</a></li>
-        <li><a href="#area9"></a></li>
-        <li><a href="#area10"></a></li>
+        <li><a href="#area9">Criando um repositório no GitHub</a></li>
+        <li><a href="#area10">Conectando repositório local ao remoto - Git</a></li>
         <li><a href="#area11"></a></li>
     </ul>
     </nav>
@@ -32,17 +32,17 @@
        <h1 id="area2"><em>Instalando o Git</em></h1>
        <h3>Entrando no site do <em>Git</em></h3>
        <ol type="I">
-        <li>No caso de <em>windonws</em> vá em <em>pront de comando</em> para verificar se realmente não tem o <em>Git</em> instalado</li>
-        <li>Em <em>pront de comando</em> digite <em>git --version</em> e rode para ver a resposta</li>
+        <li>No caso de <em>windows</em> vá em <em>prompt de comando</em> para verificar se realmente não tem o <em>Git</em> instalado</li>
+        <li>Em <em>prompt de comando</em> digite <em>git --version</em> e rode para ver a resposta</li>
         <li> Se mostrar a <em>versão</em> significa que já está instalado, se disser que <em>não encontro</em>  significa que precisa ser instalado</li>
-        <li>No caso de não estar intale o pacote compatível e depois de o mesmo comando na <em>pront de comando</em> e vejá se já está instalado</li>
+        <li>No caso de não estar intale o pacote compatível e depois de o mesmo comando na <em>prompt de comando</em> e vejá se já está instalado</li>
         <img src="../assets/images/instalandogit.png">
        </ol>
 
        <h1 id="area3"><em>Configurando o Git</em></h1>
        <h3>Sempre que houver uma alteração no projeto o <em>Git</em> automáticamente vai associar ao <em>usuário responsável</em> pela alteração</h3>
         <ol type="I">
-            <li>Em <em>pront de comando</em> coloque as seguintes informações para configurar com seu dados</li>
+            <li>Em <em>prompt de comando</em> coloque as seguintes informações para configurar com seu dados</li>
             <img src="../assets/images/configit.png">
             <li>Para verificar se os dados foram salvos digite as seguintes informações em <em>pront de comando</em></li>
             <img src="../assets/images/configit2.png">
@@ -50,7 +50,7 @@
 
         
         <h1 id="area4"><em>Iniciando um repositório - Git</em></h1>
-        <h3>Comandos básicos de <em>pront de comando</em></h3>
+        <h3>Comandos básicos de <em>prompt de comando</em></h3>
 
         <ol type="I">
             <li><em>cd C:/users/Nome do usuário</em> é a pasta raiz do seu sistema</li>
@@ -66,7 +66,7 @@
           <li><em>Entre</em> na pasta desejada</li>
           <li><em>git init</em> para iniciar o repositório</li>
           <li> Uma <em>pasta oculta</em> vai ser criada</li>
-          <li> Veja o que há na pasta por <em>pront de comando</em> ou abilite a opção de visualizar arquivos ocultos</li>
+          <li> Veja o que há na pasta por <em>prompt de comando</em> ou abilite a opção de visualizar arquivos ocultos</li>
           <img src="../assets/images/configit3.png"><br/>
           <img src="../assets/images/configit4.png"><br/>
           <img src="../assets/images/configit5.png">
@@ -80,7 +80,7 @@
         <ol type="I">
             <li>Crie um arquivo <em>README.md</em> digite o texto e salve</li>
             <img src="../assets/images/brc1.png">
-            <li>Vá em <em>pront de comando</em> e de o comando <em>git status</em> e vai ver o que foi alterado na pasta</li>
+            <li>Vá em <em>prompt de comando</em> e de o comando <em>git status</em> e vai ver o que foi alterado na pasta</li>
             <img src="../assets/images/brc2.png">
             <li>Em vermelho mostra arquivos que o git <em>nunca viu</em> sendo assim ele não está monitorando esses arquivos</li>
             <li>Dessa forma precisa <em>adicionar</em> esses arquivos. Existem duas for mas de adicionar: <em>git add "nome do arquivo"</em> adiciona um por um e <em>git add -A</em> adiciona todos que o git não está vendo. Após este comando digite <em>git status</em> novamente e veja se deu certo</li>
@@ -137,6 +137,49 @@
             <img src="../assets/images/diff2.png">
             <li>Para saber das alterações feitas em determinado arquivo digite <em>git diff "nome do arquivo"</em></li>
             <li>Para voltar a alterações feitas em determinado arquivo digite <em>git checkout HEAD -- "arquivo que queira voltar"</em></li>
+        </ol>
+
+        <h1 id="area9"><em>Criando um repositório no GitHub</em></h1>
+        <h3>O repositório do <em>GitHub</em> é como se estivesse na <em>nuvem </em> você pode assesar de qualquer lugar do mundo, diferente do repositóque fizemos até então que foi <em>local</em></h3>
+        <ol type="I">
+            <li>Entre no GitHub e faça o <em>login</em></li>
+            <li>Clique em <em>new repository</em></li>
+            <img src="../assets/images/repGitHub1.png">
+            <li>Preencha com as seguintes informações:</li>
+            <img src="../assets/images/repGitHub2.png">
+            <li>Clique em <em>Create repository</em>, que vai ser redirecionado para está página</li>
+            <img src="../assets/images/repGitHub3.png">
+        </ol>
+
+        <h1 id="area10">Conectando repositório local ao remoto - Git</h1>
+        <h3>No caso do Windows baixe o app <em>Git Bash</em> para poder iniciar a conexão</h3>
+        <h3>Para começar é preciso gerar a chave <em>SSH</em></h3>
+        <ol type="I">
+            <li>Abra o <em>Git Bash</em> ou <em>prompt de comando</em></li>
+            <li>Coloque este comando <em>ssh-keygen -t ed25519 -C "seu e-mail"</em> de enter</li>
+            <img src="../assets/images/conectGitHub1.png">
+            <li>Arraste o arquivo <em>.pub</em> para o projeto</li>
+            <img src="../assets/images/conectGitHub2.png">
+            <li>Copie o texto</li>
+            <li>Vá para o <em>GitHub</em> e clique em <em>Settings</em></li>
+            <img src="../assets/images/conectGitHub3.png">
+            <li>Clique em <em>SSH and GPG keys</em> e depois em <em>new SSH key</em></li>
+            <img src="../assets/images/conectGitHub4.png">
+            <li>Cole a chave e de um nome, em seguida clique em <em>add SSH key</em></li>
+            <img src="../assets/images/conectGitHub5.png">
+            <li>Chave salva</li>
+            <img src="../assets/images/conectGitHub6.png">
+            <li>Volte para o repositório do <em>GitHub</em></li>
+            <li>Se já tiver um git criado copie o código da segunda opção</li>
+            <img src="../assets/images/conectGitHub7.png">
+            <li>Execute os seguites comandos</li>
+            <img src="../assets/images/conectGitHub8.png">
+            <li><em>Fetch</em> é a capacidade de puxar o que está no repositório <em>remoto</em> para o <em>local</em></li>
+            <li><em>Push</em> é a capacidade de levar o que está no repositório <em>local</em> para o <em>remoto</em></li>
+            <li>Em <em>prompt de comando</em> digite <em>git push -u origin master</em>, vai aparecer uma aba do <em>GitHub</em> para se conectar e o arquivo vai ser gerado</li>
+            <img src="../assets/images/conectGitHub9.png">
+            <li>Atualize o <em>GitHub</em> e o projeto vai aparecer lá</li>
+            <img src="../assets/images/conectGitHub10.png">
         </ol>
    
     </section>
