@@ -1,3 +1,2 @@
 Meu primeiro sistema no Git
-
-Alteração do README para descrever melhor o meu sistema.
+Neste arquivo temos o passo a passo de como utilizar o Git e o GitHub.
